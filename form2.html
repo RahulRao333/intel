@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .gradient-custom {
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgb(185, 165, 185), rgba(245, 87, 108, 1))
+    }
+    
+    </style>
+    <title>Water Quality Detection System</title>
+</head>
+<body>
+    <section class="vh-400 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+              <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                <div class="card-body p-4 p-md-5">
+                    <h5>Water Quality Detection System</h5>
+                    <h6>Data Entry Form</h6>
+                  
+                  <form method="POST" >  
+                        <table cellpadding="50" >
+                            <div class="rows">
+                            <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                        <tr>
+                        <td>
+                            <input type="number" id="aluminium" name="aluminium" style="border:3px black solid;" class="form-control form-control-lg "/>
+                            <label class="form-label" for="aluminium">Aluminium</label>
+                                  
+                         </td>
+                         <td>
+                            <input type="number" id="arsenic" name="arsenic"  style="border:3px black solid;" class="form-control form-control-lg "/>
+                            <label class="form-label" for="arsenic">Arsenic</label>
+                        </td> 
+                        </tr> 
+
+                        <tr>
+                        <td>
+                            <input type="number" id="barium" name="barium" style="border:3px black solid;" class="form-control form-control-lg " />
+                            <label class="form-label" for="barium">Barium</label>
+                                  
+                         </td>
+                         <td>
+                            <input type="number" id="cadmium" name="cadmium" style="border:3px black solid;"class="form-control form-control-lg "/>
+                            <label class="form-label" for="cadmium">Cadmium</label>
+                        </td> 
+                        </tr> 
+                        <tr>
+                        <td>
+                            <input type="number" id="chloramine" name="chloramine" style="border:3px black solid;"class="form-control form-control-lg "/>
+                            <label class="form-label" for="chloramine">Chloramine</label>
+                                  
+                         </td>
+                         <td>
+                            <input type="number" id="chromium" name="chromium"  style="border:3px black solid;"class="form-control form-control-lg "/>
+                            <label class="form-label" for="chromium">Chromium</label>
+                        </td> 
+                        </tr> 
+                        <tr>
+                        <td>
+                            <input type="number" id="copper" name="copper" style="border:3px black solid;" class="form-control form-control-lg "/>
+                            <label class="form-label" for="copper">Copper</label>
+                                  
+                         </td>
+                         <td>
+                            <input type="number" id="flouride" name="flouride" style="border:3px black solid;" class="form-control form-control-lg "/>
+                            <label class="form-label" for="flouride">Flouride</label>
+                        </td> 
+                        </tr> 
+                        <tr>
+                        <td>
+                            <input type="number" id="bacteria" name="bacteria" style="border:3px black solid;" class="form-control form-control-lg " />
+                            <label class="form-label" for="bacteria">Bacteria</label>
+                                  
+                         </td>
+                         <td>
+                            <input type="number" id="viruses" name="viruses" style="border:3px black solid;" class="form-control form-control-lg " />
+                            <label class="form-label" for="viruses">Viruses</label>
+
+                        </td> 
+                        </tr> 
+                        <tr>
+                            <td>
+                                <input type="number" id="lead" name="lead" style="border:3px black solid;" class="form-control form-control-lg "/>
+                                <label class="form-label" for="lead">Lead</label>
+                                      
+                             </td>
+                             <td>
+                                <input type="number" id="nitrates" name="nitrates" style="border:3px black solid;" class="form-control form-control-lg "/>
+                                <label class="form-label" for="nitrates">Nitrates</label>
+                                
+                            </td> 
+                            </tr> 
+                            <tr>
+                                <td>
+                                    <input type="number" id="nitrites" name="nitrites" style="border:3px black solid;" class="form-control form-control-lg "/>
+                                    <label class="form-label" for="nitrites">Nitrites</label>
+                                          
+                                 </td>
+                                 <td>
+                                    <input type="number" id="mercury" name="mercury" style="border:3px black solid;" class="form-control form-control-lg " />
+                                    <label class="form-label" for="mercury">Mercury</label>
+                                    
+                                </td> 
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <input type="number" id="perchlorate" name="perchlorate" style="border:3px black solid;" class="form-control form-control-lg "/>
+                                        <label class="form-label" for="perchlorate">Perchlorate</label>
+                                              
+                                     </td>
+                                     <td>
+                                        <input type="number" id="radium" name="radium" style="border:3px black solid;" class="form-control form-control-lg " />
+                                        <label class="form-label" for="radium">Radium</label>
+                                        
+                                    </td> 
+                                    </tr> 
+
+                                    <tr>
+                                        <td>
+                                            <input type="number" id="selenium" name="selemium" style="border:3px black solid;" class="form-control form-control-lg "/>
+                                            <label class="form-label" for="selenium">Selenium</label>
+                                                  
+                                         </td>
+                                         <td>
+                                            <input type="number" id="silver" name="silver" style="border:3px black solid;" class="form-control form-control-lg " />
+                                            <label class="form-label" for="silver">Silver</label>
+                                            
+                                        </td> 
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="number" id="uranium" name="uranium" style="border:3px black solid;" class="form-control form-control-lg "/>
+                                                <label class="form-label" for="uranium">Uranium</label>
+                                                      
+                                             </td>
+                                             <td>
+                                                <div class="mt-4 pt-2">
+                                                    <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                                                  </div>
+                                                  <div class="mt-4 pt-2">
+                                                    <input class="btn btn-primary btn-lg" type="reset" value="Reset" />
+                                                  </div>
+                                                
+                                            </td> 
+                                            </tr>  
+                            <tr>
+                                <td>
+                                    <input type="text" id="drinkable" name="drinkable" style="border:3px black solid;" class="form-control form-control-lg "/>
+                                    <label class="form-label" for="drinkable">Is the water drinkable ? </label>  
+                                </td>
+                            </tr>
+                        </div>
+                         <div>
+                        </div>
+                        </table>
+                       
+      
+                    
+                
+    
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

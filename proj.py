@@ -10,7 +10,8 @@ X = data.drop(['is_safe'], axis = 1).values
 y = data['is_safe'].values
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2)
-
+from sklearnex import patch_sklearn
+patch_sklearn()
 from sklearn.metrics import classification_report
 from sklearn import metrics
 acc = []
@@ -38,7 +39,7 @@ import io
 app=Flask(__name__)
 water_recommendation_model_path = 'RandomForest.pkl'
 water_recommendation_model = pickle.load(open(water_recommendation_model_path, 'rb'))
-@ app.route('/home')
+@ app.route('/')
 def home():
     title='Water Safety Detection System'
     return render_template('form2.html',title=title)
